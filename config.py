@@ -6,7 +6,7 @@ ADMIN_IDS = [int(x) for x in os.environ.get("ADMIN_IDS", "").split(",") if x.str
 SSH_HOST = os.environ["SSH_HOST"]
 SSH_PORT = int(os.environ.get("SSH_PORT", "22"))
 SSH_USER = os.environ["SSH_USER"]
-SSH_PRIVATE_KEY = os.environ["SSH_PRIVATE_KEY"]  # کل متن کلید خصوصی (نه مسیر فایل)
+SSH_PRIVATE_KEY_B64 = os.environ["SSH_PRIVATE_KEY_B64"]  # خروجی: base64 -w0 ~/.ssh/mcbot_key
 
 # مسیر پوشه‌ی agent روی VPS (فایل rcon_cli.py اونجاست)
 AGENT_DIR = os.environ.get("AGENT_DIR", "/home/tri_ali/mc_panel_bot_agent")
