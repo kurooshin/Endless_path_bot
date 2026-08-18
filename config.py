@@ -4,7 +4,7 @@ BOT_TOKEN = os.environ["BOT_TOKEN"]
 ADMIN_IDS = [int(x) for x in os.environ.get("ADMIN_IDS", "").split(",") if x.strip()]
 
 SSH_HOST = os.environ["SSH_HOST"]
-SSH_PORT = int(os.environ.get("SSH_PORT", "22"))
+SSH_PORT = int(os.environ.get("SSH_PORT", "2222"))
 SSH_USER = os.environ["SSH_USER"]
 SSH_PRIVATE_KEY_B64 = os.environ["SSH_PRIVATE_KEY_B64"]  # خروجی: base64 -w0 ~/.ssh/mcbot_key
 
